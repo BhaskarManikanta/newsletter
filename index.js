@@ -13,7 +13,7 @@ const ADMIN_USERNAME = 'admin';
 const ADMIN_PASSWORD = 'Abm13abm13@';
 
 // Middleware
-app.use(cors());
+app.use(cors({ origin : '*' }));
 app.use(express.json());
 
 // Connect to MongoDB
